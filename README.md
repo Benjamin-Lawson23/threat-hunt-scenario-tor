@@ -99,56 +99,31 @@ DeviceNetworkEvents
 
 ## Chronological Event Timeline 
 
-###2026-02-11T21:25:56.5879743Z
-- User ben on device ben-test-vm-md downloaded a Tor installer.
+### 2026-02-11T21:25:56.5879743Z
+- User ben on device `ben-test-vm-md` downloaded a Tor installer.
 - Multiple Tor-related files were created.
-- A file named tor-shopping-list.txt was created on the Desktop.
-- **Source**: DeviceFileEvents
+- A file named `tor-shopping-list.txt` was created on the Desktop.
+- **Source:** `DeviceFileEvents`
 
-###2026-02-11T21:33:57Z (2:33:57 PM)
-Process created:
- tor-browser-windows-x86_64-portable-15.0.5.exe
+### 2026-02-11T21:33:57Z (2:33:57 PM)
+-**Process created:** `tor-browser-windows-x86_64-portable-15.0.5.exe`
+-**Executed from:** `C:\Users\ben\Downloads\`
+-**Execution method:** Silent installation using `/S` switch
+-**SHA256:** `15448e951583b624c3f8fdfa8bc55fa9b65e1bcafd474f3f2dfd5444e4178846`
+-**Source:** 'DeviceProcessEvents`
 
+### 2026-02-11T21:35:31.7002897Z
+- User ben launched the Tor Browser.
+- `firefox.exe` (Tor Browser) process created.
+- Additional instances of Tor-related processes (`tor.exe`, `firefox.exe`, `tor-browser.exe`) followed.
+- **Source:** `DeviceProcessEvents`
 
-Executed from:
- C:\Users\ben\Downloads\
-
-
-Execution method: Silent installation using /S switch
-
-
-SHA256:
- 15448e951583b624c3f8fdfa8bc55fa9b65e1bcafd474f3f2dfd5444e4178846
-
-
-Source: DeviceProcessEvents
-
-###2026-02-11T21:35:31.7002897Z
-User ben launched the Tor Browser.
-
-
-firefox.exe (Tor Browser) process created.
-
-
-Additional instances of Tor-related processes (tor.exe, firefox.exe, tor-browser.exe) followed.
-
-
-Source: DeviceProcessEvents
-
-###2026-02-11T21:35:44Z (2:35:44 PM)
-tor.exe established a successful outbound network connection.
-
-
-Remote IP: 198.98.61.60
-
-
-Remote Port: 9001 (commonly associated with Tor relay traffic)
-
-
-Additional five similar connections observed.
-
-
-Source: DeviceNetworkEvents
+### 2026-02-11T21:35:44Z (2:35:44 PM)
+- `tor.exe` established a successful outbound network connection.
+- **Remote IP:** `198.98.61.60`
+- **Remote Port:** `9001` (commonly associated with Tor relay traffic)
+- Additional five similar connections observed.
+- **Source:** `DeviceNetworkEvents`
 
 ---
 
