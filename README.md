@@ -129,12 +129,14 @@ DeviceNetworkEvents
 
 ## Summary
 
-The user "employee" on the "threat-hunt-lab" device initiated and completed the installation of the TOR browser. They proceeded to launch the browser, establish connections within the TOR network, and created various files related to TOR on their desktop, including a file named `tor-shopping-list.txt`. This sequence of activities indicates that the user actively installed, configured, and used the TOR browser, likely for anonymous browsing purposes, with possible documentation in the form of the "shopping list" file.
+On February 11, 2026, user `ben` on device `ben-test-vm-md` downloaded and silently installed the Tor Browser from the `Downloads` directory. Shortly after installation, the user launched the Tor Browser, initiating multiple Tor-related processes.
+Within minutes of execution, the system established outbound network connections to a known Tor port (9001), confirming active Tor network usage. Multiple additional connections followed, indicating sustained Tor activity.
+Additionally, a file named `tor-shopping-list.txt` was created on the user’s desktop shortly after the installer download, which may warrant further review to determine its purpose and contents.
 
 ---
 
 ## Response Taken
 
-TOR usage was confirmed on the endpoint `threat-hunt-lab` by the user `employee`. The device was isolated, and the user's direct manager was notified.
+TOR usage was confirmed on endpoint `ben-test-vm-md`. The device was isolated and the user's direct manager was notified.
 
 ---
