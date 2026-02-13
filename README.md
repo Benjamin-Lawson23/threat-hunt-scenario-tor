@@ -62,18 +62,19 @@ DeviceProcessEvents
 
 ### 3. Searched the `DeviceProcessEvents` Table for TOR Browser Execution
 
-Searched for any indication that user "employee" actually opened the TOR browser. There was evidence that they did open it at `2024-11-08T22:17:21.6357935Z`. There were several other instances of `firefox.exe` (TOR) as well as `tor.exe` spawned afterwards.
+I searched the `DeviceProcessEvents` table for any indication that the user `ben` opened the TOR browser. There was evidence that the employee did open the browser at `2026-02-11T21:35:31.7002897Z`. Several other instances of `firefox.exe` (TOR) were also created after this point. 
 
 **Query used to locate events:**
 
 ```kql
-DeviceProcessEvents  
-| where DeviceName == "threat-hunt-lab"  
-| where FileName has_any ("tor.exe", "firefox.exe", "tor-browser.exe")  
-| project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine  
+DeviceProcessEvents
+| where DeviceName == "ben-test-vm-md"
+| where FileName has_any ("tor.exe", "firefox.exe", "tor-browser.exe")
+| project Timestamp, DeviceName, AccountName, ActionType, FileName, FolderPath, SHA256, ProcessCommandLine
 | order by Timestamp desc
 ```
-<img width="1212" alt="image" src="https://github.com/user-attachments/assets/b13707ae-8c2d-4081-a381-2b521d3a0d8f">
+<img width="1412" height="607" alt="Screenshot 2026-02-13 at 2 46 05 PM" src="https://github.com/user-attachments/assets/0a225b7c-7c08-46ff-979d-78b84d7266de" />
+
 
 ---
 
