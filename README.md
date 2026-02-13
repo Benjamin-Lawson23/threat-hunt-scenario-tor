@@ -44,7 +44,7 @@ DeviceFileEvents
 
 ### 2. Searched the `DeviceProcessEvents` Table
 
-I searched the `DeviceProcessEvents` table for any `ProcessComandLine` that contained the string `tor-browser-windows-x86_64-portable-15.0.5.exe  /S`. The logs indicated that on `February 11, 2026 at 2:33:57 PM`, the user `ben` on the device `ben-test-vm-md` started (created) a process for the file `tor-browser-windows-x86_64-portable-15.0.5.exe` from the `Downloads` folder (C:\Users\ben\Downloads\), running it silently with the `/S` option. The file has the SHA256 hash `15448e951583b624c3f8fdfa8bc55fa9b65e1bcafd474f3f2dfd5444e4178846`.
+I searched the `DeviceProcessEvents` table for any `ProcessComandLine` that contained the string `tor-browser-windows-x86_64-portable-15.0.5.exe  /S`. The logs indicated that on February 11, 2026 at 2:33:57 PM, the user `ben` on the device `ben-test-vm-md` started (created) a process for the file `tor-browser-windows-x86_64-portable-15.0.5.exe` from the `Downloads` folder (C:\Users\ben\Downloads\), running it silently with the /S option. The file has the SHA256 hash `15448e951583b624c3f8fdfa8bc55fa9b65e1bcafd474f3f2dfd5444e4178846`.
 
 **Query used to locate event:**
 
