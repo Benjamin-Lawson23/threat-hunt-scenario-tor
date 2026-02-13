@@ -106,11 +106,11 @@ DeviceNetworkEvents
 - **Source:** `DeviceFileEvents`
 
 ### 2026-02-11T21:33:57Z (2:33:57 PM)
--**Process created:** `tor-browser-windows-x86_64-portable-15.0.5.exe`
--**Executed from:** `C:\Users\ben\Downloads\`
--**Execution method:** Silent installation using `/S` switch
--**SHA256:** `15448e951583b624c3f8fdfa8bc55fa9b65e1bcafd474f3f2dfd5444e4178846`
--**Source:** 'DeviceProcessEvents`
+- **Process created:** `tor-browser-windows-x86_64-portable-15.0.5.exe`
+- **Executed from:** `C:\Users\ben\Downloads\`
+- **Execution method:** Silent installation using `/S` switch
+- **SHA256:** `15448e951583b624c3f8fdfa8bc55fa9b65e1bcafd474f3f2dfd5444e4178846`
+- **Source:** 'DeviceProcessEvents`
 
 ### 2026-02-11T21:35:31.7002897Z
 - User ben launched the Tor Browser.
